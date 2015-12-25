@@ -4,6 +4,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+a, a:hover, a:visited {
+    color: #75D4DA;
+}
+
 header {
     color: white;
     padding: 30px 0 50px;
@@ -117,8 +121,4 @@ section.white {
 
 footer {
     padding: 25px 0;
-}
-
-footer a {
-    color: #333;
 }
