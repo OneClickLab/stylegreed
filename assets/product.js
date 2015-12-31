@@ -12,10 +12,16 @@
 
         function setTemplate(product, callback) {
             var template = $template;
+            var price = product.salePriceLabel;
+
+            if (product.salePriceLabel) {
+                price = '<s><small>'+ product.priceLabel +'</small></s> '+ product.salePriceLabel;
+            }
 
             template = template.replace(new RegExp('{{image}}', 'gi'), product.image.sizes.XLarge.url)
                                .replace(new RegExp('{{url}}', 'gi'), product.clickUrl)
                                .replace(new RegExp('{{productName}}', 'gi'), product.unbrandedName)
+                               .replace(new RegExp('{{price}}', 'gi'), price)
                                .replace(new RegExp('{{brandName}}', 'gi'), (product.brand) ? product.brand.name : '')
 
             callback(template);
