@@ -12,7 +12,7 @@
 
         function setTemplate(product, callback) {
             var template = $template;
-            var price = product.salePriceLabel;
+            var price = product.priceLabel;
 
             if (product.salePriceLabel) {
                 price = '<s><small>'+ product.priceLabel +'</small></s> '+ product.salePriceLabel;
