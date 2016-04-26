@@ -1,6 +1,6 @@
 body {
-    color: #626364;
-    background-color: #e7e8e9;
+    color: #333;
+    background-color: #f7f7f7;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -35,20 +35,22 @@ header h3 {
 }
 
 header a.button {
-    background-color: #EACA36;
+    background-color: none;
     display: inline-block;
     border-radius: 50px;
+    border: 3px solid white;
     padding: 0px 50px;
     line-height: 50px;
     font-weight: bold;
     font-size: 18px;
     margin: 70px auto 60px;
     text-decoration: none;
-    color: #333;
+    color: white;
 }
 
 header a.button:hover {
-    opacity: .8;
+    background-color: white;
+    color: #333;
 }
 
 header div.iphone {
