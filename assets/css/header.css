@@ -1,0 +1,70 @@
+section.header h1.logo {
+  background-image: url('../img/logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 90px 0 0;
+  padding: 0;
+  height: 60px;
+  width: 250px;
+  overflow: hidden;
+  text-indent: -99999px;
+}
+
+section.header .iphone {
+  background-image: url('../img/phone.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+  width: 260px;
+  height: 500px;
+  margin-right: 15px;
+  position: relative;
+}
+
+section.header .iphone video {
+  width: 208px;
+  position: absolute;
+  left: 28px;
+  top: 64px;
+}
+
+section.header h3 {
+  font-weight: 300;
+  font-size: 28px;
+}
+
+section.header a.button {
+  background-color: #75D4DA;
+  display: inline-block;
+  border-radius: 6px;
+  border: 3px solid #75D4DA;
+  padding: 0px 50px;
+  line-height: 50px;
+  font-size: 18px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+section.header a.button:hover {
+  background-color: transparent;
+  border-color: #75D4DA;
+  color: #333;
+}
+
+@media screen and (max-width: 767px) {
+  section.header h1.logo {
+    margin: 90px auto 0;
+  }
+
+  section.header a.button {
+    margin-top: 40px;
+    display: block;
+  }
+
+  section.header .iphone video {
+    display: none;
+  }
+}
